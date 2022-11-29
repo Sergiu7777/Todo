@@ -18,7 +18,7 @@ public class Task {
     private String description;
     private TaskPriority taskPriority;
 
-    @OneToMany
+    @ManyToOne
     private Author author;
 
 }

@@ -15,6 +15,10 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne
+    private String firstName;
+    private String lastName;
+    private String email;
+
+    @OneToMany
     private List<Task> tasks;
 }
